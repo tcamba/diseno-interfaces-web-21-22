@@ -1,0 +1,17 @@
+div {
+  height: 100vh;
+  /*background-image: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);*/
+  /*background-image: -webkit-repeating-linear-gradient(left, #09009f, #00ff95);*/
+  /*background-image: -webkit-radial-gradient(
+    center,
+    ellipse,
+    #09009f 40%,
+    #00ff95 80%
+  );*/
+  /*background: -webkit-repeating-radial-gradient(
+    center,
+    ellipse,
+    #09009f 10%,
+    #00ff95 30%
+  );*/
+}

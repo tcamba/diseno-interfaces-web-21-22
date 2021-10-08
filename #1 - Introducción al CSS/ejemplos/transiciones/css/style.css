@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+}
+
+.parent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.child {
+  position: absolute;
+  left: 10px;
+  border: 2px solid black;
+  height: 33vh;
+  width: 33vw;
+
+  background-color: brown;
+
+  /*transition-property: left;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;*/
+
+  transition: transform 2s linear 0s;
+}
+
+.child:hover {
+  /*transform: scale(2, 0.2);*/
+  transform: translateX(500px);
+  /*left: 500px;*/
+}
