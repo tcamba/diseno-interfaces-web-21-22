@@ -22,7 +22,7 @@ body {
   transition-timing-function: linear;
   transition-delay: 1s;*/
 
-  transition: transform 2s linear 0s;
+  /*transition: transform 2s linear 0s;*/
 }
 
 .child:hover {
