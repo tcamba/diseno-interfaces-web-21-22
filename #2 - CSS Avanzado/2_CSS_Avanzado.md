@@ -1154,5 +1154,6 @@ Atajo para ***align-self*** y ***justify-self***.
 
 ### Actividades
 
-1 - Posiciona las siguientes imágenes en un _grid_ 4x4 que ocupe todo el _viewport_. Cada imagen debe llenar toda su celda. Añade espacios de separación entre las imágenes.
+1 - Posiciona las siguientes [imágenes](https://github.com/taciocamba/diseno-interfaces-web-21-22/tree/main/%232%20-%20CSS%20Avanzado/actividades/actividad-grid-1) en un _grid_ 4x4 que ocupe todo el _viewport_. Cada imágen debe llenar toda su celda. Añade espacios de separación entre las imágenes.
+
 2 - Completa todos los niveles del juego CSS [Grid Garden](https://cssgridgarden.com/)
