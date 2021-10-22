@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      table.customTable {
+        width: 100%;
+        background-color: #ffffff;
+        border-collapse: collapse;
+        border-width: 2px;
+        border-color: #7ea8f8;
+        border-style: solid;
+        color: #000000;
+      }
+
+      table.customTable td,
+      table.customTable th {
+        border-width: 2px;
+        border-color: #7ea8f8;
+        border-style: solid;
+        padding: 5px;
+        text-align: center;
+      }
+
+      table.customTable thead {
+        background-color: #7ea8f8;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="customTable">
+      <thead>
+        <tr>
+          <th colspan="5">Frameworks para Frontend</th>
+        </tr>
+        <tr>
+          <th>Logo</th>
+          <th>Nombre</th>
+          <th>Desarrollador</th>
+          <th>Última versión</th>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="assets/logo_angular.png" width="100px" alt="angular-fw" />
+          </td>
+          <td>Angular</td>
+          <td>Google</td>
+          <td>12.1.4</td>
+          <td><a href="https://angular.io/">angular.io</a></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="assets/logo_svelte.png" width="100px" alt="svelte-fw" />
+          </td>
+          <td>Svelte</td>
+          <td>Voluntariado</td>
+          <td>3.43.1</td>
+          <td><a href="https://svelte.dev/">svelte.dev</a></td>
+        </tr>
+        <tr>
+          <td>
+            <img src="assets/logo_vuejs.png" width="100px" alt="svelte-fw" />
+          </td>
+          <td>Vue</td>
+          <td>Evan You</td>
+          <td>3</td>
+          <td><a href=https://vuejs.org/">vuejs.org</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
