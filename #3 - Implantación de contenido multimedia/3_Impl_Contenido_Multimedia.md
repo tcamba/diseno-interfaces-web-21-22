@@ -37,7 +37,7 @@ En este escenario, integrar imágenes que se adapten a los diferentes tamaños d
 
 ### Imagenes en HTML5
 
-Si al potente elemento `img`, que descarga, decodifica y renderiza contenido :muscle: :muscle: :muscle: le sumamos que los navegadores modernos soportan prácticamente cualquier formato de imagen, tenemos un _win win_ de manual. 
+Si al potente elemento :muscle: `img` :muscle:, que descarga, decodifica y renderiza contenido le sumamos que los navegadores modernos soportan prácticamente cualquier formato de imagen, tenemos un _win win_ de manual. 
 
 Pero como dijo alguien alguna vez en un anuncio de ruedas...
 
@@ -56,14 +56,14 @@ Tienes para elegir (%, vh, vw, em, ex, rem, ch, vmin o vmax... :sweat:) así que
 
 ---
 
-pero por si las :fly: :fly: es buena idea :bulb: hacer algo así
+y por si las :fly: :fly: es buena idea :bulb: hacer algo así
 
 ```css
 img, embed, object, video {
   max-width: 100%;
 }
 ```
-para evitar el desborde limitando la anchura máxima que pueden tomar los elementos multimedia.
+limitando la anchura máxima que pueden tomar los elementos multimedia.
 
 ---
 
@@ -71,8 +71,8 @@ para evitar el desborde limitando la anchura máxima que pueden tomar los elemen
   
 Así ayudaras al navegador a elegir la mejor imagen para utilizar en función de las condiciones del dispositivo.
 
-\- ¿***srcset***, ***sizes***... ayudar YO al NAVEGADOR y no al revés :astonished:...? no entiendo nada _hulio_ :laughing:
-\- Son propiedades de `img` (:muscle: :muscle: :muscle:) para resolver el _art direction problem_...
+\- ¿***srcset***, ***sizes***... ayudar YO al NAVEGADOR :astonished:...? No entiendo nada _hulio_ :confused:
+\- Son propiedades de :muscle: `img` :muscle: para resolver el _art direction problem_...
 \- ¿_art direc_... _whaaaat_? 
 \- :eye: :arrow_down:
 
@@ -86,7 +86,7 @@ Así ayudaras al navegador a elegir la mejor imagen para utilizar en función de
 
 ---
 
-En la pantalla de mi _Iphone_... bonitos :evergreen_tree: :evergreen_tree: :evergreen_tree:
+En la pantalla de mi :dollar: _Iphone_ :dollar: ... bonitos :evergreen_tree: :evergreen_tree: :evergreen_tree:
 
 ![w:320](assets/lobo-en-el-bosque.jpg)
 
@@ -96,10 +96,30 @@ En la pantalla de mi _Iphone_... bonitos :evergreen_tree: :evergreen_tree: :ever
 
 ---
 
-Menuda estafa 
+Pues hacemos algo así 
+
+```css
+@media (max-width: 320px) {
+  .img-lobo {
+    transform: scale(1.5)
+  }
+}
+```
+
+y ya... 
+
+:expressionless: mi perro tiene problemas más graves y sin nombre propio en inglés
+
+---
+
+:rage: Prueba con el gato listillo :arrow_down:
+
+![w:720](assets/gato-ciudad.jpg)
+
+---
 
 
-
+---
 
 - Usa el elemento `picture` cuando quieras especificar diferentes imagenes dependiendo de las características del dispositivo.
 - 
