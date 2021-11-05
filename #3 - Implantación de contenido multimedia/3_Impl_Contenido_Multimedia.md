@@ -720,14 +720,13 @@ div {
 ```html
 <img src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" alt="star" width="16" height="16">
 ```
+---
 
-el formato general es
+El formato general es
 
 ```html
 data:[<mime type>][;charset=<charset>][;base64],<encoded data>
 ```
-
----
 
 Podeis usar esta herramienta para [convertir a base64 :link:](https://www.base64decode.org/)...
 
