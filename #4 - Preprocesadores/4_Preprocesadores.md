@@ -1100,6 +1100,8 @@ y el *css*
 
 #### `@for`
 
+##### `@for <expresion> through <expresion> {}`
+
 ```scss
 $base-color: #036;
 
@@ -1128,5 +1130,138 @@ ul:nth-child(3n + 3) {
 }
 ```
 
+----
 
+##### `@for <expresion> to <expresion> {}`
 
+```scss
+$base-color: #036;
+
+@for $i from 1 to 3 {
+  ul:nth-child(3n + #{$i}) {
+    background-color: lighten($base-color, $i * 5%);
+  }
+}
+```
+
+compila  a
+
+```css
+ul:nth-child(3n + 1) {
+  background-color: #004080;
+}
+
+ul:nth-child(3n + 2) {
+  background-color: #004d99;
+}
+```
+---
+
+#### Actividad 2
+
+![w:800](actividades/assets/ex1.png "ejemplo actividad 2")
+
+Escribe el código *sass* necesario para lograr el [siguiente resultado :link:](actividades/assets/ex1.mp4)
+
+---
+
+##### Instrucciones
+
+- Declara (y usa) una variable `$fontstack` y almacena el valor de la fuente *Gotu* importada de *Google*
+- Declara (y usa) una variable `$fontsize` con un valor de 16px
+- Declara una variable `$primary` con un valor *lightskyblue*. Usa una función *Sass* para oscurecer este color y guarda el resultado en la variable `$primary_dark`
+  - Mas tarde, cambia este color a otro color *light*, p. ej. *lightpink* o *aquamarine* y toda tu web (incluyendo el *navbar*) se *re-coloreará*
+- Añade un reset universal, aplicando un *line-height* por defecto y algunos *paddings* donde sea necesario
+- El #container debe estar centrado horizontalmente y tener una anchura máxima de 800px
+- El color del texto de los *tags* `h1` debe ser `$primary-dark`
+
+---
+
+- Usa `flexbox` para transformar la lista desordenada del `nav` en un `navbar` responsivo
+  - Usa anidamientos (de forma que la otra lista en el documento no se vea afectada)
+  - El `background-color` de los elementos debe ser `$primary`, mientras que el `outline` (que da mejor resultado que `border`) y los textos de los enlaces deben mostrarse en `$primary-dark`
+  - Cuando se haga *hover* sobre un elemento del menu, el enlace tiene que hacerse *bold* y los colores (`color` y `background-color`) cambiar con una transición de 1s
+  - Para pantallas pequeñas, los elementos del menú tienen que disponerse unos encima de los otros. Para pantallas con anchos entre 650px o mas, los objetos del menu se mostrarán como una lista horizontal
+- Ajusta el margen izquierdo de la lista desordenada en el elemento *main* (de forma que los *bullets* estén alineados horizontalmente con el resto del documento)
+
+---
+
+#### Actividad 2
+
+![w:800](actividades/assets/ex2.png "ejemplo actividad 3")
+
+Escribe el código *Sass* necesario para lograr :arrow_down:
+
+---
+
+- Pantallas *extra small* (< 576px)
+
+![w:200](actividades/assets/ex2-1.png "ejemplo actividad 3 - 1")
+
+---
+
+- Pantallas *small* (< 768px):
+
+![w:400](actividades/assets/ex2-2.png "ejemplo actividad 3 - 2")
+
+---
+
+- Pantallas *medium* (>= 768px) o mayores:
+
+![w:600](actividades/assets/ex2-3.png "ejemplo actividad 3 - 3")
+
+---
+
+##### Instrucciones
+
+- Declara 2 variables `$small` (con un valor de 576px) y `$medium` (con un valor de 768px)
+- Escribe un estilo `mixin` con 2 argumentos, `$color` y `$size` (con un valor por defecto de 14px), que establece
+  - el color (del texto) a `$color`
+  - el ``backgroun-color` al color inverso de `$color`, pero ajustando `$lightness`` al 20%
+  - un `font-size`, `margin` y ``pading` igual a `$size`
+  - el ``lineheigh`` a 1.5 (o `$size*1.5`)
+  - un borde solido de 5px de color `$color`
+- Añade un *reset* universal y algunos `paddings` donde haga falta
+- Usa *Verdana* (con una fuente cualquiera de reserva)
+- Usa el `mixin` para darle a `#container` un diseño basado en `darkred` (y el tamaño por defecto `$size` de 14px)
+- En pantallas pequeñas, el diseño debe basarse en `darkblue` y 16px
+- En pantallas medias (o grandes), el diseño debe basarse en `darkgreen` y 20px
+
+---
+
+#### Actividad 3
+
+![w:800](actividades/assets/ex3.png "ejemplo actividad 3")
+
+Escribe el código *sass* necesario para lograr el [siguiente resultado :link:](actividades/assets/ex3.mp4)
+
+---
+
+##### Instrucciones
+
+- Crea 3 nuevos *partials*: *_variables.scss, _mixins.scss* y *_reboot.scss*
+- En el fichero principal *style.scss*, importa la fuente de *Google* *Anton* y estos 3 *partials* (en el orden correcto)
+- *_variables.scss*
+  - Declara 3 variables `$fontstack-titles` (*Anton* con una fuente de respaldo) , `$fontstack-text` (*Verdana* con fuente de respaldo) y `$small` (600px) 
+- *_mixins.scss*
+  - Copia el diseño del `mixin` (de la actividad anterior) a este fichero
+- *_reboot.scss*
+  - Añade un reset universal
+  - `body`:
+    -  fuente: `$fontstack-text`
+    -  diseño basado en *white* y 1rem para pantallas *extra small* (< 600px)
+    -  diseño basado en *black* y 1.25rem para pantallas *medium* o mayores (>= 600px)
+
+---
+
+- encabezado principal:
+  - fuente: `$fontstack-titles``con tamaño 1.75rem
+  - algo de `padding` debajo
+- parrafos (en `article`)
+  - algo de `padding` debajo
+- enlaces en todos los estados:
+  - elementos *block* con un ancho de 130px
+  - fuente: `$fontstack-titles`
+  - diseño basado en *black* y 1rem (elimina el margen izquierdo)
+- enlaces cuando haces *hover*:
+  - diseño basado en *dimgray* y 1rem
