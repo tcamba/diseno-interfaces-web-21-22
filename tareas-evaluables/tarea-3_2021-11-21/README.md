@@ -106,8 +106,7 @@ window.onload = function loadStuff() {
   header = doc.querySelector('.post-header');
   enhancedClass = 'post-header-enhanced'; // Clase HTML que vamos a aplicar cuando se cargue la imagen de alta calidad
 
-  // Rather convoluted, but parses out the first mention of a background
-  // image url for the enhanced header, even if the style is not applied.
+  // Buscamos la primera mención de una url para background-image incluso aunque el estilo no se haya aplicado todavía
   var bigSrc = (function() {
     // Busca todas las reglas CSS en la hoja de estilos
     var styles = doc.querySelector('style').sheet.cssRules;
