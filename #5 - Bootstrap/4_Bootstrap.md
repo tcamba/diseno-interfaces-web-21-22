@@ -612,7 +612,7 @@ pero cuidado ⚠️, el elemento sigue ahí, ocupando espacio como Harry Potter 
 
 Replica el *layout* del ejercicio 2 de la tarea entregable 2 usando *Bootstrap*
 
-![w:400](../tareas-evaluables/tarea-2_2021-10-27/assets/holy_grail.png "holy grail layout")
+![w:400](assets/holy_grail.png "holy grail layout")
 
 ---
 
@@ -622,7 +622,7 @@ Replica el *layout* del ejercicio 2 de la tarea entregable 2 usando *Bootstrap*
 
 Replica el *layout* del ejercicio 3 de la tarea entregable 2 usando *Bootstrap*
 
-![w:300](../tareas-evaluables/tarea-2_2021-10-27/assets/holy_grail_grid.png "holy grail layout")
+![w:300](assets/holy_grail_grid.png "holy grail layout")
 
 
 
