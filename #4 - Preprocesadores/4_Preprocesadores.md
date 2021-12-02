@@ -1184,9 +1184,12 @@ Escribe el código *sass* necesario para lograr el [siguiente resultado :link:](
   - Para pantallas pequeñas, los elementos del menú tienen que disponerse unos encima de los otros. Para pantallas con anchos entre 650px o mas, los objetos del menu se mostrarán como una lista horizontal
 - Ajusta el margen izquierdo de la lista desordenada en el elemento *main* (de forma que los *bullets* estén alineados horizontalmente con el resto del documento)
 
+
+[Aquí el pen :link:](https://codepen.io/taciocamba/pen/rNzXMWZ) con la actividad resuelta
+
 ---
 
-#### Actividad 2
+#### Actividad 3
 
 ![w:800](actividades/assets/ex2.png "ejemplo actividad 3")
 
