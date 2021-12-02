@@ -1,0 +1,57 @@
+@import 'https://fonts.googleapis.com/css2?family=Anton&display=swap';
+body {
+  font: Verdana, sans-serif;
+}
+@media (max-width: 600px) {
+  body {
+    color: white;
+    background-color: #333333;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border: 5px solid white;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    color: black;
+    background-color: white;
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    line-height: 1.875rem;
+    border: 5px solid black;
+  }
+}
+
+#container h1 {
+  font: Anton, sans-serif;
+  padding-bottom: 10px;
+}
+#container article p {
+  padding-bottom: 10px;
+}
+#container a {
+  font: Anton, sans-serif;
+  display: block;
+  color: black;
+  background-color: white;
+  font-size: 1;
+  margin: 1;
+  padding: 1;
+  line-height: 1.5;
+  border: 5px solid black;
+  margin-left: none;
+}
+#container a :hover {
+  color: dimgray;
+  background-color: #c9c9c9;
+  font-size: 1;
+  margin: 1;
+  padding: 1;
+  line-height: 1.5;
+  border: 5px solid dimgray;
+}
+
+/*# sourceMappingURL=styles.css.map */

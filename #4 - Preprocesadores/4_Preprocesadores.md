@@ -1185,7 +1185,7 @@ Escribe el código *sass* necesario para lograr el [siguiente resultado :link:](
 - Ajusta el margen izquierdo de la lista desordenada en el elemento *main* (de forma que los *bullets* estén alineados horizontalmente con el resto del documento)
 
 
-[Aquí el pen :link:](https://codepen.io/taciocamba/pen/rNzXMWZ) con la actividad resuelta
+[Aquí el pen :link:](https://codepen.io/taciocamba/pen/rNzXMWZ) con la actividad
 
 ---
 
@@ -1213,6 +1213,7 @@ Escribe el código *Sass* necesario para lograr :arrow_down:
 
 ![w:600](actividades/assets/ex2-3.png "ejemplo actividad 3 - 3")
 
+[Aquí el pen :link:](https://codepen.io/taciocamba/pen/JjrdbWw) con la actividad
 ---
 
 ##### Instrucciones
@@ -1232,7 +1233,7 @@ Escribe el código *Sass* necesario para lograr :arrow_down:
 
 ---
 
-#### Actividad 3
+#### Actividad 4
 
 ![w:800](actividades/assets/ex3.png "ejemplo actividad 3")
 
@@ -1268,3 +1269,5 @@ Escribe el código *sass* necesario para lograr el [siguiente resultado :link:](
   - diseño basado en *black* y 1rem (elimina el margen izquierdo)
 - enlaces cuando haces *hover*:
   - diseño basado en *dimgray* y 1rem
+
+[Aquí :link:](actividades/actividad-4/) tenéis la actividad resuelta

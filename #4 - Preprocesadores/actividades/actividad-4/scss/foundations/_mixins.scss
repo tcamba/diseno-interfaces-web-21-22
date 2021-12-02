@@ -1,0 +1,9 @@
+@mixin ejercicio3($color, $size: 14px) {
+  color: $color;
+  background-color: lighten(invert($color), 20%);
+  font-size: $size;
+  margin: $size;
+  padding: $size;
+  line-height: 1.5 * $size;
+  border: 5px solid $color;
+}

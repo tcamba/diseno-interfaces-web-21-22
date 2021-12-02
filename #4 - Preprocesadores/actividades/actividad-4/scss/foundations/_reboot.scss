@@ -1,0 +1,44 @@
+
+@use '_variables';
+@use '_mixins';
+
+body {
+  font: variables.$fontstack-text;
+  @media (max-width: variables.$small) {
+    @include mixins.ejercicio3(white, 1rem);
+  }
+
+  @media (min-width: variables.$small) {
+    @include mixins.ejercicio3(black, 1.25rem);
+  }
+}
+
+#container {
+  h1 {
+    font: variables.$fontstack-titles;
+    padding: {
+      bottom: 10px;
+    }
+  }
+
+  article {
+    p {
+      padding: {
+        bottom: 10px;
+      }
+    }
+  }
+
+  a {
+    font: variables.$fontstack-titles;
+    display: block;
+    @include mixins.ejercicio3(black, 1);
+    margin: {
+      left: none;
+    }
+
+    :hover {
+      @include mixins.ejercicio3(dimgray, 1);
+    }
+  }
+}
