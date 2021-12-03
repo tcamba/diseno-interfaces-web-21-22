@@ -24,8 +24,7 @@ header: "**Diseño de Interfaces Web 2021-2022**"
 - [¿De qué va *Bootstrap* y como empiezo?](#de-que-va-bootstrap-y-como-empiezo) 🤔
 - [Diseñando con *Bootstrap* y sus 12 columnas](#diseñando-con-bootstrap-y-sus-12-columnas)
 - [Comodidades *Bootstrap*](#comodidades-bootstrap)
-- ...y no pueden faltar los Formularios :unamused:
-- ¿Algunos componentes más? :pray:
+- [Componentes por favor](#componentes-por-favor) :pray:
 
 ---
 
@@ -618,13 +617,274 @@ Replica el *layout* del ejercicio 2 de la tarea entregable 2 usando *Bootstrap*
 
 ![bg opacity:.2](assets/actividad-calculo.jpg "calculando")
 
-## Actividad 1
+## Actividad 2s
 
 Replica el *layout* del ejercicio 3 de la tarea entregable 2 usando *Bootstrap*
 
 ![w:300](assets/holy_grail_grid.png "holy grail layout")
 
+---
 
+## Componentes por favor :pray:
+
+Bueno, *Bootstrap* los regala, así que vamos a ver sólo dos o tres 😅
+
+---
+
+### *Navs*
+
+Lo vemos con ejemplos
+
+```html
+<nav class="nav">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+```
+
+Como veis :eyes: hay 2 clases importantes `nav` y `nav-item` que se explican solas.
+
+Fijaros en el `disabled` del último enlace, que lo desactiva.
+
+---
+
+y si nos gustan las pestañitas, podemos añadir `nav-tabs`
+
+```html
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Disabled</a>
+    </li>
+  </ul>
+```
+
+Por si alguién no lo vé se hace con la clase `nav-tabs`
+
+---
+
+También tenemos *pills*
+
+```html
+<nav class="nav nav-pills">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+```
+
+👁️ clase `nav-pills`
+
+---
+
+y cómo está basado en *flexbox*, podéis hacer que los *items* del menú rellenen todo el espacio
+
+```html
+<nav class="nav nav-fill">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+```
+
+⚠️ clase `nav-fill`
+
+---
+
+o de forma similar, podéis distribuir los enlaces de forma regular con `nav-justified`
+
+```html
+<nav class="nav nav-pills nav-justified">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+```
+
+---
+
+Y si tendéis a la verticalidad tenéis la clase `flex-column`
+
+```html
+<nav class="nav flex-column">
+  <a class="nav-link active" aria-current="page" href="#">Active</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link" href="#">Link</a>
+  <a class="nav-link disabled">Disabled</a>
+</nav>
+```
+
+pero basta ya de `navs` 😫 vamos con su versión seria...
+
+---
+<style scoped>
+pre {
+   font-size: 0.3rem;
+}
+</style>
+
+### *Navbar*
+
+Por aqui ⬇️ un ejemplo completito
+
+```html
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" 
+                  href="#" id="navbarDropdown" 
+                  role="button" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false">
+               Dropdown
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link disabled">Disabled</a>
+            </li>
+         </ul>
+         <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+         </form>
+      </div>
+   </div>
+</nav>
+```
+
+---
+
+tan completito que no cabe en la diapositiva y he tenido que reducier el tamaño de fuente a prueba de miopes...pero lo comentamos por aquí
+
+- `navbar`  - Se explica solo...
+- `navbar-expand-lg`  - `navbar-expand-{sm,mg,lg,xl}` para que el menú colapse adecuadamente en el *breakpoint* establecido
+- `navbar-light` - Os hacéis a la idea que es el típico tema de *Bootstrap* que colorea el fondo y demás
+- `navbar-brand` - Que contiene el logo de la marca y lo excluye del colapso del menú
+- `navbar-toggler` - Es el boton que contiene también el icono para expandir el menú cuando colapsa
+
+---
+
+
+- `collapse` y `navbar-collapse` - Marca el elemento contenedor de los *items* del menú que colapsarán
+
+Lo que sigue os suena porque es un `nav` como el que vimos arriba.
+
+Y con esto... ***el menú esta servido***...
+  
+![w:300](assets/badum.png "badum tss")
+
+[Por aquí :link:](https://codepen.io/taciocamba/pen/PoJqRLe) el *pen*
+
+---
+
+### Modal
+<style scoped>
+pre {
+   font-size: 0.5rem;
+}
+</style>
+
+
+Otro componente bastante utilizado es el de los modales o cuadros de diálogo
+
+```html
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false" 
+     tabindex="-1" 
+     aria-labelledby="staticBackdropLabel" 
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" 
+                class="btn-close" 
+                data-bs-dismiss="modal" 
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+este componente no tiene mucho misterio ...
+
+- `modal`, `modal-dialog`, `modal-content`, `modal-header` y `modal-title` - se explican solos
+- `fade` - es la animación que aplica al modal cuando aparece y desaparece
+
+---
+
+## Cards
+
+A todo el mundo le gustan las cartas ⬇️
+
+```html
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+```
+
+En realidad es un componente muy sencillo que se monta con un par de clases como 👀
 
 
 
